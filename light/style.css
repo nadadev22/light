@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    transition: background-color 0.3s; /* تأثير الانتقال */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none; /* لإخفاء التنسيق الافتراضي */
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #fff, #000);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1; /* زيادة الشفافية عند التمرير */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50; /* لون الزر */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: #45a049; /* لون الزر عند التمرير */
+}
